@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row m-0">
+    <div class=" container d-flex">
+      <div class=" w-100">
+        <table class="w-100" style="margin-top: 30px;">
+          <thead>
+            <th>All Users</th>
+            <th>Delete User</th>
+          </thead>
+          <tbody>
+            <tr *ngFor="let policy of Full?.user" ng-required="this files is required">
+              <td>{{policy.fullName}}</td>
+              <td>
+                <div class="delete_user">
+                  <button class="border-0 btn-transition btn btn-outline-warning" (click)="delete(policy)">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="btn btn-primary" (click)="getMyaccount()">Your Account</button>
+      </div>
+    </div>
+  </div>
+  <br>
+</div>
